@@ -1,0 +1,211 @@
+
+
+body {
+  background: #222;
+  color: white;
+  font-family: Open Sans;
+}
+
+.navigation {
+  background: white;
+  display: flex;
+  flex-flow: row;
+  white-space: nowrap;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 110%;
+  border-bottom: 10px solid #222;
+}
+
+.navbtn, .navspc {
+  color: black;
+  font-size: 1.5rem;
+  padding: 5px 20px 5px 20px;
+  border-right: 1px solid black;
+}
+
+.navspc {
+  font-weight: bold;
+  padding: 5 10px 5px 10px;
+}
+.navbtn:hover {
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(177,196,204,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  padding: 50px 20px 150px 50px;
+  margin-top: 65px;
+  background-image: url("img/header-placeholder.jpg");
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.body {
+  background: white;
+  color: #222;
+  font-size: 1.5rem;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+}
+
+.type {
+  display: flex;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.typewriter {
+  padding: 20px;
+}
+
+.typewriter p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #222; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 2s steps(20, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #222; }
+}
+
+.text-container {
+  width: 50%;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  font-family: monospace;
+  font-weight: 500;
+  border-right: 3px solid;
+  border-image:linear-gradient(transparent, black, black, black, transparent) 1;
+}
+
+.section-container {
+  width: 50%;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
+.section-header {
+  text-align: right;
+  font-size: 30px;
+}
+
+.quicklink {
+  text-align: right;
+  padding: 10px;
+  border-top: 2px solid;
+  border-image:linear-gradient(90deg, transparent, black, black, black, transparent) 1;
+}
+
+.quicklink:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  padding: 20px;
+  font-size: 20px;
+  align-content: center;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  width: 45%;
+  align-self: center;
+  border-right: 3px solid;
+  border-image:linear-gradient(transparent, white, white, white, transparent) 1;
+}
+
+.contact {
+  align-self: center;
+  padding-left: 40px;
+}
+
+.contact-header {
+  font-size: 30px;
+}
+
+.logo {
+  width: minmax(100px, 223px);
+}
+
+.copyright {
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.github {
+  width: 64px;
+}
+
+.footnote, figcaption {
+  font-size: 22.5px;
+  color: #444;
+  font-style: italic;
+}
+
+figure {
+  text-align: center;
+}
+
+.figimg {
+  max-width: 90%;
+}
+
+.title {
+  font-size: 30px;
+  color: black;
+}
+.title:hover {
+  text-decoration: underline;
+}
+
+#btn {
+  background-color: #048bd9;
+  width: 25%;
+  font-family: Open Sans;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.clickone, .clicktwo, .clickthree, .clickfour, .clickfive {
+  display: none;
+}
+
+.showmoreone, .showmoretwo, .showmorethree, .showmorefour, .showmorefive {
+  display: none;
+}
+
+.active {
+  display: block;
+}
